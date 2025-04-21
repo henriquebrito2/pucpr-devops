@@ -11,7 +11,7 @@ def main():
     app.register_blueprint(api.blueprint)
     
     # Runs the app
-    app.run()
+    app.run(host="0.0.0.0")
 
 if __name__ == '__main__':
     main()
