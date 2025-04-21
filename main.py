@@ -7,8 +7,8 @@ def main():
     app = Flask(__name__)
     
     # Instantiates the Example class and registers its blueprints
-    example = Example()
-    app.register_blueprint(example.blueprint)
+    api = Api()
+    app.register_blueprint(api.blueprint)
     
     # Runs the app
     app.run()
